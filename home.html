@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Css/navbar.css">
@@ -164,8 +165,76 @@
 
 
 
+    <!-- some members -->
+    <section class="members">
+        <div class="member-cover">
+            <div class="container">
+                <div class="head">
+                    <h4>اعضاء مجلس العائلة</h4>
+                    <a href="#">
+                        <i class="fa-solid fa-bolt"></i>
+                        عرض الكل
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="splide" dir="ltr" role="group" aria-label="Splide Basic HTML Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <a href="#">
+                                            <div class="member-card">
+                                                <div class="card-img">
+                                                    <img src="./Imgs/man.png" alt="">
+                                                </div>
+
+                                                <div class="card-body">
+                                                    <h3>الدكتور / محمد طارق</h3>
+                                                    <p>(عضو)</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="icon" src="./Imgs/wave-haikei.svg" alt="">
+    </section>
+
+
 
     <script src="./JS/navbard.js"></script>
+    <script src="../splide-4.1.3/dist/js/splide.min.js"></script>
+
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 4,
+            focus: 'right',
+            breakpoints: {
+                1399: {
+                    perPage: 3,
+                },
+                992: {
+                    perPage: 2,
+                },
+                767: {
+                    perPage: 1.5
+                },
+                550: {
+                    perPage: 1
+                }
+            }
+        });
+
+        splide.mount();
+    </script>
 </body>
 
 </html>

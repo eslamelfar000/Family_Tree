@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+}
+
+:root {
+  --main-color: #704e42;
+  --sec-color: #cdb18e;
+}
+
+.banner-section {
+  background: url("../Imgs/banner.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* banner */
+
+.banner-section .banner-cover {
+  background: rgba(63, 43, 5, 0.63);
+  padding: 250px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-section .banner-cover .banner-content {
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+
+.banner-section .banner-cover .banner-content h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: wheat;
+}
+
+.banner-section .banner-cover .banner-content p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 1199px) {
+  .banner-section .banner-cover {
+    padding: 180px 0px;
+  }
+
+  .banner-section .banner-cover .banner-content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-section .nav-cover ul {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-section .banner-cover .banner-content {
+    width: 85%;
+  }
+
+  .banner-section .banner-cover .banner-content p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-section .banner-cover {
+    padding: 150px 0px;
+  }
+
+  .banner-section .banner-cover .banner-content {
+    width: 94%;
+  }
+
+  .banner-section .banner-cover .banner-content p {
+    font-size: 14px;
+  }
+}

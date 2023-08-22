@@ -325,6 +325,75 @@
     </section>
 
 
+
+    <!-- new -->
+    <section class="news">
+        <div class="news-cover">
+            <div class="container">
+                <div class="head">
+                    <h4>أخبار العائلة</h4>
+                    <a href="#">
+                        <i class="fa-solid fa-bolt"></i>
+                        عرض الكل
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="splide my-splide" dir="ltr" role="group" aria-label="Splide Basic HTML Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="news-card">
+                                            <div class="card-img">
+                                                <img src="./Imgs/news.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="#">
+                                                    عنوان الخبر
+                                                    <i class="fa-solid fa-bolt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="splide__slide">
+                                        <div class="news-card">
+                                            <div class="card-img">
+                                                <img src="./Imgs/news2.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="#">
+                                                    عنوان الخبر
+                                                    <i class="fa-solid fa-bolt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="splide__slide">
+                                        <div class="news-card">
+                                            <div class="card-img">
+                                                <img src="./Imgs/news3.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="#">
+                                                    عنوان الخبر
+                                                    <i class="fa-solid fa-bolt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="icon" src="./Imgs/wave-haikei.svg" alt="">
+    </section>
+
+
     <script src="./JS/navbard.js"></script>
     <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
 
@@ -350,6 +419,26 @@
         });
 
         splide.mount();
+
+
+        var mySplide = new Splide('.my-splide', {
+            type: 'loop',
+            perPage: 3,
+            focus: 'right',
+            breakpoints: {
+                1199: {
+                    perPage: 2,
+                },
+                767: {
+                    perPage: 1.5
+                },
+                550: {
+                    perPage: 1
+                }
+            }
+        });
+
+        mySplide.mount();
     </script>
 </body>
 

@@ -633,3 +633,9 @@ body {
 .splide__pagination {
   display: none !important;
 }
+
+@media (max-width: 575px) {
+  .news {
+    padding-bottom: 100px;
+  }
+}

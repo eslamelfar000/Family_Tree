@@ -191,7 +191,8 @@ body {
 /* member section */
 
 .members {
-  margin: 150px 0px;
+  margin: 70px 0px;
+  margin-top: 100px;
   padding: 40px 0px;
   padding-bottom: 170px;
   width: 100%;
@@ -353,5 +354,100 @@ body {
 
   .members .head h4 {
     margin-bottom: 20px;
+  }
+}
+
+/*goals section */
+
+.goals {
+  overflow: hidden;
+  width: 100%;
+  margin: 60px 0px;
+}
+
+.goals .row {
+  display: flex;
+  justify-content: center;
+}
+
+.goals .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.goals .head h4 {
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--main-color);
+  margin-bottom: 0;
+  text-shadow: 4px 4px 0px var(--sec-color);
+}
+
+.goals .head a {
+  text-decoration: none;
+  color: var(--sec-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.goals .row .col-list {
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--main-color);
+  color: white;
+  height: 100%;
+}
+
+.goals .row .col-list .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.goals .row .col-list h5 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.goals .row .col-list h5 span {
+  margin: 0px 10px;
+  font-weight: 700;
+}
+
+.goals .row .col-list h5 i {
+  font-size: 20px;
+  transform: translateY(3px);
+  color: var(--sec-color);
+  font-weight: 800;
+}
+
+.goals .row .col-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.goals .row .col-list ul li {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.goals .row .col-list ul li i {
+  font-size: 25px;
+  margin-left: 10px;
+  color: var(--sec-color);
+}
+
+.goals .row .col-list ul li p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  .goals .row .colom {
+    margin-bottom: 25px;
   }
 }

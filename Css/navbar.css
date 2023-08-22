@@ -15,14 +15,17 @@ body {
 
 .banner-section .my-nav {
   background: rgba(63, 43, 5, 0.63);
-  background: white;
+  /* background: white; */
+  padding-top: 15px;
 }
 
 .banner-section .nav-cover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 0px 0px 0px 20px;
+  background: white;
+  border-radius: 10px;
 }
 
 .banner-section .nav-cover img {

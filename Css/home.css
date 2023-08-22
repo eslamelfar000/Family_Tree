@@ -180,4 +180,8 @@ body {
   .about .row .colom {
     margin-bottom: 30px;
   }
+
+  .about .row .col-data p {
+    font-size: 17px;
+  }
 }

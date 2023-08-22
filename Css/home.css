@@ -816,8 +816,12 @@ body {
 }
 
 @media (max-width: 575px) {
-  .news {
-    padding-bottom: 100px;
+  .activities .head {
+    flex-direction: column;
+  }
+
+  .activities .head h4 {
+    margin-bottom: 20px;
   }
 }
 

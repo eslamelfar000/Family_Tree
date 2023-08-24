@@ -3,6 +3,8 @@
   margin: 0;
   direction: rtl;
   font-family: "Cairo", sans-serif;
+  /* scrollbar-width: thin;
+  scroll-behavior: smooth; */
 }
 
 :root {
@@ -79,8 +81,10 @@
 
 .dash-content {
   width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  /* overflow-y: auto; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .dash-content .header {
@@ -91,7 +95,10 @@
   align-items: center;
   padding: 10px 0px;
   text-align: left;
-  margin-bottom: 40px;
+  /* position: sticky;
+  top: 0;
+  left: 0; */
+  /* height: 50px; */
 }
 
 .dash-content .header .admin {
@@ -136,6 +143,15 @@
 
 .dash-content .header .icon-btn i:hover {
   color: var(--main-color);
+}
+
+.dash-content .component {
+  height: calc(100vh- 75px);
+  overflow-y: auto;
+}
+
+.dash-content .component .side {
+  height: 700px;
 }
 
 @media (min-width: 992px) {

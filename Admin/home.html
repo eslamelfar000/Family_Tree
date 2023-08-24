@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist//css/bootstrap-grid.min.css">
+    <link rel="shortcut icon" href="../Imgs/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../Css/dashboard-side-bar.css">
+    <title>لوحة التحكم</title>
+</head>
+
+<body>
+
+
+    <section class="dashboard">
+        <div class="side-bar">
+            <div class="side-cover">
+
+                <div class="close" onclick="closeSide()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <div class="logo">
+                    <a href="./home.html">
+                        <img src="../Imgs/logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="items">
+                    <ul>
+                        <li>
+                            <a class="active" href="./home.html">
+                                <i class="fa-solid fa-bolt"></i>
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./new-acount.html">
+                                <i class="fa-solid fa-bolt"></i>
+                                انشاء حساب جديد
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html">
+                                <i class="fa-solid fa-bolt"></i>
+                                اضافة عضو جديد
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="dash-content">
+            <div class="header">
+                <div class="icon-btn">
+                    <i class="fa-solid fa-bars-staggered" onclick="openSide()"></i>
+                </div>
+
+                <div class="admin">
+                    <div class="info">
+                        <h4>محمد أحمد</h4>
+                        <p>أدمن</p>
+                    </div>
+                    <img src="../Imgs/man.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="component">
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="../JS/dash-bar.js"></script>
+
+</body>
+
+</html>

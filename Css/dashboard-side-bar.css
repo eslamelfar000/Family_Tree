@@ -150,10 +150,6 @@
   overflow-y: auto;
 }
 
-.dash-content .component .side {
-  height: 700px;
-}
-
 @media (min-width: 992px) {
   .dash-content .header .icon-btn i,
   .dashboard .side-bar .side-cover .close {

@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+  /* scrollbar-width: thin;
+    scroll-behavior: smooth; */
+}
+
+:root {
+  --main-color: #704e42;
+  --sec-color: #cdb18e;
+}
+
+.new-acc {
+  width: 100%;
+  height: 100%;
+}
+
+.new-acc .new-cover {
+  padding: 20px;
+}
+
+.new-acc .title {
+  margin-bottom: 40px;
+}
+
+.new-acc .title h3 {
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--main-color);
+  text-shadow: 3px 3px 0px var(--sec-color);
+}
+
+.new-acc .input-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-acc .input-section .input-place {
+  width: 49%;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.new-acc .input-section .input-place span {
+  position: absolute;
+  padding: 0px 20px;
+  background: white;
+  color: var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  top: -20px;
+  right: 20px;
+}
+
+.new-acc .input-section .input-place input {
+  width: 100%;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  padding: 15px;
+  outline: none;
+  font-size: 15px;
+}
+
+.new-acc .sub {
+  display: flex;
+  justify-content: end;
+}
+
+.new-acc button {
+  border: none;
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 5px;
+  background: var(--main-color);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.new-acc button:hover {
+  background: var(--sec-color);
+  color: var(--main-color);
+}
+
+@media (max-width: 575px) {
+  .new-acc .input-section {
+    flex-direction: column;
+  }
+
+  .new-acc .input-section .input-place {
+    width: 100%;
+  }
+}

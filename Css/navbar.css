@@ -11,6 +11,7 @@ body {
 .banner-section {
   background: url("../Imgs/banner.jpg") no-repeat center;
   background-size: cover;
+  z-index: 2;
 }
 
 .banner-section .my-nav {
@@ -28,6 +29,10 @@ body {
   border-radius: 10px;
 }
 
+.banner-section .nav-cover .logo {
+  z-index: 1;
+}
+
 .banner-section .nav-cover img {
   width: 150px;
   border-radius: 10px;
@@ -39,6 +44,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
+  z-index: 1;
 }
 
 .banner-section .nav-cover ul li a {
@@ -77,6 +83,7 @@ body {
 .banner-section .nav-cover .lang {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .banner-section .nav-cover .lang a {
@@ -98,6 +105,26 @@ body {
   cursor: pointer;
 }
 
+.banner-section .nav-cover .lang .to-login {
+  font-size: 14px;
+  background: var(--main-color);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: 0.4s;
+}
+
+.banner-section .nav-cover .lang .to-login:hover {
+  background: var(--sec-color);
+  color: var(--main-color);
+}
+
+@media (max-width: 991px) {
+  .banner-section .nav-cover .lang .to-login {
+    display: none;
+  }
+}
 @media (min-width: 992px) {
   .banner-section .nav-cover .lang .bar {
     display: none;
@@ -179,6 +206,23 @@ body {
   width: 100%;
   right: 0;
 }
+
+/* .banner-section .side-nav .side-cover .to-login {
+  font-size: 14px;
+  background: var(--main-color);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: 0.4s;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.banner-section .side-nav .side-cover .to-login:hover {
+  background: var(--sec-color);
+  color: var(--main-color);
+} */
 
 .banner-section .side-nav .side-cover .close {
   position: absolute;

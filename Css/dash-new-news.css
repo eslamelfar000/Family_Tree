@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+  /* scrollbar-width: thin;
+      scroll-behavior: smooth; */
+}
+
+:root {
+  --main-color: #704e42;
+  --sec-color: #cdb18e;
+}
+
+.news {
+  width: 100%;
+  height: 100%;
+}
+
+.news .new-cover {
+  padding: 20px;
+}
+
+.news .title {
+  margin-bottom: 40px;
+}
+
+.news .title h3 {
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--main-color);
+  text-shadow: 3px 3px 0px var(--sec-color);
+}
+
+.news .input-place {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.news .input-place span {
+  position: absolute;
+  padding: 0px 20px;
+  background: white;
+  color: var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  top: -20px;
+  right: 20px;
+}
+
+.news .input-place input {
+  width: 100%;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  padding: 15px;
+  outline: none;
+  font-size: 15px;
+}
+
+.news .input-place label {
+  padding: 20px 10px 4px 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.news .input-place label img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.news .input-place input.in-img {
+  display: none;
+}
+
+.news .sub {
+  display: flex;
+  /* justify-content: end; */
+}
+
+.news button {
+  border: none;
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 5px;
+  background: var(--main-color);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.news button:hover {
+  background: var(--sec-color);
+  color: var(--main-color);
+}
+
+@media (max-width: 575px) {
+  .news .input-section {
+    flex-direction: column;
+  }
+
+  .news .input-place label img {
+    height: 300px;
+  }
+
+  .news .input-section .input-place {
+    width: 100%;
+  }
+}

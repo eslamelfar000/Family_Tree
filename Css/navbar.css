@@ -29,6 +29,13 @@ body {
   border-radius: 10px;
 }
 
+.banner-section .icon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
 .banner-section .nav-cover .logo {
   z-index: 1;
 }
@@ -86,6 +93,15 @@ body {
   z-index: 1;
 }
 
+.banner-section .nav-cover ul li a.active {
+  color: var(--sec-color);
+}
+
+.banner-section .nav-cover ul li a.active::before {
+  width: 100%;
+  left: 0%;
+}
+
 .banner-section .nav-cover .lang a {
   text-decoration: none;
   color: var(--main-color);
@@ -122,6 +138,10 @@ body {
 
 @media (max-width: 991px) {
   .banner-section .nav-cover .lang .to-login {
+    display: none;
+  }
+
+  .banner-section .nav-cover ul {
     display: none;
   }
 }

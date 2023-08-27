@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.css">
-    <link rel="stylesheet" href="../bootstrap-5.3.1-dist//css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap-grid.min.css">
     <link rel="shortcut icon" href="../Imgs/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../Css/dashboard-side-bar.css">
-    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="../Css/dash-new-news.css">
+    <title>لوحة التحكم | اضافة خبر جديد</title>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                 <div class="items">
                     <ul>
                         <li>
-                            <a class="active" href="./home.html">
+                            <a href="./home.html">
                                 <i class="fa-solid fa-bolt"></i>
                                 الرئيسية
                             </a>
@@ -50,7 +51,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="./new-news.html">
+                            <a class="active" href="./new-news.html">
                                 <i class="fa-solid fa-bolt"></i>
                                 اضافة خبر جديد
                             </a>
@@ -67,33 +68,43 @@
                     <i class="fa-solid fa-bars-staggered" onclick="openSide()"></i>
                 </div>
 
-                <div class="admin" onclick="toggleAdmin()">
+                <div class="admin">
                     <div class="info">
                         <h4>محمد أحمد</h4>
                         <p>أدمن</p>
                     </div>
                     <img src="../Imgs/man.png" alt="">
-
-
-                    <ul class="drop">
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-id-badge"></i>
-                                البيانات الشخصية
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                تسجيل الخروج
-                            </a>
-                        </li>
-                    </ul>
                 </div>
 
             </div>
 
             <div class="component">
+                <div class="news">
+                    <div class="new-cover">
+                        <div class="title">
+                            <h3>اضافة خبر جديد</h3>
+                        </div>
+
+                        <form action="">
+                            <div class="input-place">
+                                <span>عنوان الخبر</span>
+                                <input type="text" placeholder="ادخل عنوان الخبر">
+                            </div>
+                            <div class="input-place">
+                                <span>صورة الخبر</span>
+                                <label for="img">
+                                    <img class="uploaded-img" src="../Imgs/emptyImg.png" alt="upload img">
+                                </label>
+                                <input class="in-img" id="img" type="file">
+                            </div>
+
+
+                            <div class="sub">
+                                <button type="submit">اضافة</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -101,6 +112,7 @@
 
 
     <script src="../JS/dash-bar.js"></script>
+    <script src="../JS/add-news.js"></script>
 
 </body>
 

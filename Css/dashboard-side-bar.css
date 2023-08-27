@@ -105,6 +105,70 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.dash-content .header .admin .drop {
+  position: absolute;
+  top: 85px;
+  left: 10px;
+  background: var(--main-color);
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+  width: 200px;
+  list-style: none;
+  margin: 0;
+  text-align: right;
+  cursor: initial;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+
+.dash-content .header .drop-admin .drop {
+  opacity: 1;
+  visibility: visible;
+  top: 65px;
+}
+
+.dash-content .header .admin .drop li:first-child {
+  margin-bottom: 15px;
+}
+
+.dash-content .header .admin .drop li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.4s;
+  position: relative;
+}
+
+.dash-content .header .admin .drop li a i {
+  margin-left: 10px;
+}
+
+.dash-content .header .admin .drop li a:hover {
+  color: var(--sec-color);
+}
+
+.dash-content .header .admin .drop li a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid var(--sec-color);
+  transition: 0.4s;
+}
+
+.dash-content .header .admin .drop li a:hover::before {
+  width: 100%;
+  right: 0;
 }
 
 .dash-content .header img {

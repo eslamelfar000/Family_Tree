@@ -64,12 +64,6 @@ body {
   }
 }
 
-@media (max-width: 991px) {
-  .banner-section .nav-cover ul {
-    display: none;
-  }
-}
-
 @media (max-width: 767px) {
   .banner-section .banner-cover .banner-content {
     width: 85%;

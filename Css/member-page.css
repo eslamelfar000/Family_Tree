@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+}
+
+:root {
+  --main-color: #704e42;
+  --sec-color: #cdb18e;
+}
+
+.banner-section {
+  background: url("../Imgs/news2.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: auto;
+}
+
+.banner-section .my-nav {
+  background: none;
+}
+
+.banner-section::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(63, 43, 5, 0.63);
+  z-index: -1;
+}
+
+.banner-section .banner-content {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px 200px 0px;
+}
+
+.banner-section .banner-content h3 {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .banner-section .banner-content {
+    padding: 50px 0px 100px 0px;
+  }
+}
+
+/* member section */
+
+.member {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 50px 0px 0px 0px;
+}
+
+.member .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.member .row .sec-col {
+  padding: 20px;
+  background: var(--main-color);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.member .row .person-img {
+  width: 100%;
+  border: 2px solid var(--main-color);
+  border-radius: 0px 20px 20px;
+  box-shadow: 6px 6px 0px var(--main-color);
+  height: auto;
+}
+
+.member .row .person-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .member .row .person-img {
+    margin-bottom: 30px;
+  }
+}
+
+.member .row .person-info {
+  padding: 20px;
+  background: var(--main-color);
+  border-radius: 10px;
+  color: white;
+  height: 100%;
+  border: 2px solid var(--sec-color);
+  position: relative;
+  z-index: 0;
+}
+
+.member .row .person-info::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 50%;
+  top: -6px;
+  right: -6px;
+  border-top: 10px solid var(--sec-color);
+  border-right: 10px solid var(--sec-color);
+  border-radius: 0px 10px 0px 0px;
+  z-index: -1;
+}
+
+.member .row .person-info::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 50%;
+  bottom: -6px;
+  left: -6px;
+  border-bottom: 10px solid var(--sec-color);
+  border-left: 10px solid var(--sec-color);
+  border-radius: 0px 0px 0px 10px;
+  z-index: -1;
+}
+
+.member .row .person-info h3 {
+  font-size: 45px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.member .row .person-info p {
+  font-size: 18px;
+}
+
+.member .row .person-info p:last-child {
+  margin-bottom: 0px;
+}
+
+.member .row .person-info p span {
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--sec-color);
+}
+
+.member .cv {
+  padding: 20px;
+  background: var(--sec-color);
+  border-radius: 10px;
+  position: relative;
+}
+
+.member .cv label {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.member .cv p {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 0;
+  line-height: 0.7cm;
+}
+
+@media (max-width: 767px) {
+  .member .row .person-info h3 {
+    font-size: 35px;
+  }
+}

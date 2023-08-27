@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+}
+
+:root {
+  --main-color: #704e42;
+  --sec-color: #cdb18e;
+}
+
+.banner-section {
+  background: url("../Imgs/news2.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: auto;
+}
+
+.banner-section .my-nav {
+  background: none;
+}
+
+.banner-section::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(63, 43, 5, 0.63);
+  z-index: -1;
+}
+
+.banner-section .banner-content {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px 200px 0px;
+}
+
+.banner-section .banner-content h3 {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .banner-section .banner-content {
+    padding: 50px 0px 100px 0px;
+  }
+}
+
+/* tree */
+
+.tree {
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.tree .tree-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tree .tree-content .parents {
+  display: flex;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.tree .tree-content .sons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+}
+
+.tree .tree-content img {
+  width: 230px;
+  height: 270px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.tree .tree-content .tree-img {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.tree .tree-content .tree-img label {
+  position: absolute;
+  top: -20px;
+  background: var(--sec-color);
+  color: var(--main-color);
+  border-radius: 5px;
+  left: 50%;
+  padding: 5px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  transform: translateX(-50%);
+}
+
+.tree .tree-content .big-img {
+  position: relative;
+  margin-right: 150px;
+}
+
+.tree .tree-content .big-img::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  right: -100%;
+  border: 1px solid rgb(184, 184, 184);
+  width: 100%;
+  z-index: -1;
+}
+
+.tree .tree-content .parents::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: -50%;
+  border-left: 2px solid rgb(184, 184, 184);
+  width: 100%;
+  height: 110px;
+  z-index: -1;
+  transform: translateX(-1px);
+}
+
+.tree .tree-content .sons .tree-img::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 2px solid rgb(184, 184, 184);
+  width: 2px;
+  height: 100%;
+  z-index: -1;
+}
+
+.tree .tree-content .sons .tree-img:first-child::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: 50%;
+  border-top: 2px solid rgb(184, 184, 184);
+  width: 200%;
+  height: 100%;
+  z-index: -1;
+}
+
+.tree .tree-content .sons .tree-img:last-child::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  border-top: 2px solid rgb(184, 184, 184);
+  width: 200%;
+  height: 100%;
+  z-index: -1;
+}
+
+.tree .tree-content .sons .tree-img:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: 0;
+  border-top: 2px solid rgb(184, 184, 184);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.tree .tree-content .tree-img .img-info {
+  background: var(--sec-color);
+  color: white;
+  padding: 15px 10px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.tree .tree-content .big-img .img-info {
+  background: var(--main-color);
+}
+
+.tree .tree-content .tree-img .img-info p {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .tree .line {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .tree .tree-content .parents {
+    display: flex;
+    margin-bottom: 0px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* .tree .line {
+    display: block;
+    height: 3px;
+    margin: 20px 0px 40px 0px;
+  } */
+
+  .tree .tree-content .big-img {
+    margin-right: 0;
+  }
+
+  .tree .tree-content .parents::after,
+  .tree .tree-content .big-img::before,
+  .tree .tree-content .sons .tree-img:nth-child(2)::after,
+  .tree .tree-content .sons .tree-img:last-child::after,
+  .tree .tree-content .sons .tree-img:first-child::after,
+  .tree .tree-content .sons .tree-img::before {
+    display: none;
+  }
+
+  .tree .tree-content .sons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    position: relative;
+    margin-top: 20px;
+    padding-top: 60px;
+    border-top: 2px solid gainsboro;
+  }
+}

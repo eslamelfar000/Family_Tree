@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Css/navbar.css">
-    <link rel="stylesheet" href="./Css/member-page.css">
+    <link rel="stylesheet" href="./Css/family-tree.css">
     <title>شجرة العائلة | بروفايل العضو</title>
 </head>
 
@@ -40,7 +40,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="./family-tree.html">
+                            <a class="active" href="./family-tree.html">
                                 شجرة العائلة
                             </a>
                         </li>
@@ -93,7 +93,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./family-tree.html">
+                        <a class="active" href="./family-tree.html">
                             <i class="fa-solid fa-bolt"></i>
                             شجرة العائلة
                         </a>
@@ -113,7 +113,7 @@
         <div class="banner-cover">
             <div class="banner-content">
                 <div class="person">
-                    <h3>بيانات العضو</h3>
+                    <h3>شجرة العائلة</h3>
                 </div>
             </div>
 
@@ -126,49 +126,77 @@
 
     <!-- member content -->
 
-    <section class="member">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                    <div class="person-img">
-                        <img src="./Imgs/man.png" alt="">
+    <section class="tree">
+        <div class="tree-content">
+            <div class="parents">
+                <div class="tree-img mother-img">
+                    <img src="./Imgs/mother.jpg" alt="">
+                    <label>الأم</label>
+                    <div class="img-info">
+                        <p>
+                            محمد علي
+                        </p>
+                        <span>
+                            (1996)
+                        </span>
+                    </div>
+                </div>
+                <div class="tree-img big-img">
+                    <img src="./Imgs/father.jpg" alt="">
+                    <label>الأب</label>
+                    <div class="img-info">
+                        <p>
+                            محمد علي
+                        </p>
+                        <span>
+                            (1996)
+                        </span>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-7 col-xl-8">
-                    <div class="sec-col">
-                        <div class="person-info">
-                            <h3> محمد طارق</h3>
-                            <p><span>العمر :</span> 39 سنه</p>
-                            <p><span>العنوان :</span> اليمن - صنعاء</p>
-                            <p><span>المنصب :</span> عضو</p>
-                        </div>
-                    </div>
-                </div>
             </div>
 
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="cv">
-                        <label>السيرة الذاتية</label>
+            <!-- <hr class="line"> -->
 
-                        <p>استفد من مميزات Word فهو الافضل لتصحيح الاخطاء النحوية والاملائية. بالمناسبة اذا تركت هذه
-                            الاخطاء فانت تحطم نفسك بنفسك التدقيق الاملائي من الخطوات الاساسية قبل طلب اي وظيفة. اذا لم
-                            تثبت وورد استخدم Google Slides لتحرير النصوص.
-                            فكر مليا وتريث قبل تحميل سيرة ذاتية من اي موقع كان. ليست كل قوالب جاهزة هي احترافية. التصميم
-                            المتناسق اولا لكن الاقسام أهم من ذلك. قبل اي تنزيل راجع: معلومات الاتصال، الخبرات، التعليم
-                            وغيرها مع توفر الهوامش لجميع النواحي.
-                            اختيار Cv الذاتي يرجع الى الوضعية الحالية. فمثلا الطلاب والجامعيين المتخرجين يركزون على
-                            نموذج خال من الخبرات الوظيفية ويعطي مساحة أكبر للجانب الاكاديمي بعكس المتمرسين مهنيا.
-                            اهتم بالتصميم وشكل قالب السيرة الذاتية اذا غاب الترتيب المنطقي والمتسلسل للعناصر سيتجاهل
-                            مستشار التوظيف سيرة ذاتية لانه لا يرغب في اضاعة الوقت لكثرة الطلبات.
-                            اثناء التعبئة والتعديل اعرف قيمتك وفكر كمؤسس او قائد. الشركة تريد توظيفك للاستفادة منك لانها
-                            لا لتعطي رواتب. ومنه اظهر نقاط قوتك اين يمكنك المنافسة، ماذا تتقن أكثر من باقي المتنافسين
-                            باختصار بيع نفسك كقيمة واخفي عيوبك كملائكة.
-                            ابتعد عن الكذب وتضخيم الأرقام والشهادات. التعبير يُكتب بطريقة منطقية وبسيطة ولا تحاول
-                            الاحتيال بادراج درجات وامتيازات كاذبة ببساطة ليس لصالحك. بعض الدول مثل هذه الممارسات قد
-                            يعاقب عليها القانون.</p>
+
+            <div class="sons">
+                <div class="tree-img son-img">
+                    <img src="./Imgs/girl1.jpg" alt="">
+                    <label>ابنه</label>
+                    <div class="img-info">
+                        <p>
+                            ساره محمد
+                        </p>
+                        <span>
+                            (1996)
+                        </span>
+                    </div>
+                </div>
+
+                <div class="tree-img son-img">
+                    <img src="./Imgs/firl2.jpg" alt="">
+                    <label>ابنه</label>
+                    <div class="img-info">
+                        <p>
+                            يارا محمد
+                        </p>
+                        <span>
+                            (1996)
+                        </span>
+                    </div>
+                </div>
+
+                <div class="tree-img son-img">
+                    <img src="./Imgs/son.jpg" alt="">
+                    <label>ابن</label>
+                    <div class="img-info">
+                        <p>
+                            خالد محمد
+                        </p>
+                        <span>
+                            (1996)
+                        </span>
                     </div>
                 </div>
             </div>

@@ -203,7 +203,7 @@ body {
     display: flex;
     margin-bottom: 0px;
     position: relative;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
   }
 

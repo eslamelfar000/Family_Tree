@@ -37,6 +37,11 @@
   position: relative;
   margin-bottom: 30px;
   display: flex;
+  /* justify-content: center; */
+}
+
+.news .in-img {
+  margin-right: 20px;
 }
 
 .news .input-place span {
@@ -50,7 +55,8 @@
   right: 20px;
 }
 
-.news .input-place input {
+.news .input-place input,
+.news .input-place textarea {
   width: 100%;
   border: 1px solid var(--main-color);
   border-radius: 5px;
@@ -64,6 +70,11 @@
   border: 1px solid var(--main-color);
   border-radius: 20px;
   cursor: pointer;
+}
+
+.news .sec-data {
+  display: flex;
+  justify-content: space-between;
 }
 
 .news .input-place label img {
@@ -99,6 +110,17 @@
   color: var(--main-color);
 }
 
+@media (max-width: 767px) {
+  .news .sec-data {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .news .in-img {
+    margin-right: 0px;
+  }
+}
 @media (max-width: 575px) {
   .news .input-section {
     flex-direction: column;

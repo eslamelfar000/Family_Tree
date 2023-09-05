@@ -179,3 +179,9 @@ body {
 .tree li a:hover + ul ul::before {
   border-color: var(--main-color);
 }
+
+@media (max-width: 767px) {
+  .tree {
+    justify-content: start;
+  }
+}

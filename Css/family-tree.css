@@ -64,8 +64,8 @@ body {
   overflow-x: auto;
   /* height: 70vh; */
   /* display: flex;
-  justify-content: center;
-  padding: 50px 0px; */
+  justify-content: center;*/
+  padding: 50px 0px;
 }
 
 .tree {
@@ -75,6 +75,7 @@ body {
   justify-content: center;
 }
 .tree ul {
+  padding: 0;
   padding-top: 20px;
   position: relative;
   transition: all 0.5s;
@@ -183,5 +184,6 @@ body {
 @media (max-width: 767px) {
   .tree {
     justify-content: start;
+    width: 1400px;
   }
 }

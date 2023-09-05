@@ -213,11 +213,7 @@ body {
 }
 
 @media (max-width: 575px) {
-  .tree {
-    width: 100%;
-  }
-
   .tree ul {
-    transform: scale(0.5);
+    transform: scale(0.8);
   }
 }

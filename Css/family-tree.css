@@ -212,11 +212,8 @@ body {
   }
 }
 
-/* @media (max-width: 575px) {
-  .tree {
-    width: 900px;
-  }
+@media (max-width: 575px) {
   .tree ul {
-    transform: scale(0.5);
+    transform: scale(0.7);
   }
-} */
+}

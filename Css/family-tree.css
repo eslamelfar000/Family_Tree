@@ -212,8 +212,8 @@ body {
   }
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .tree ul {
     transform: scale(0.8);
   }
-}
+} */
